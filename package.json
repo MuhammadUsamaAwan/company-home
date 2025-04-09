@@ -13,9 +13,11 @@
     "format:check": "prettier --check \"**/*.{html,css,js,,mjs,cjs,ts,tsx,json,md,mdx}\" --cache"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "next": "15.2.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.2.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
