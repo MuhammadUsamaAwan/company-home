@@ -5,7 +5,7 @@
 }
 
 @layer utilities {
-  .bg-gradient {
+  .gradient-hover {
     @apply bg-clip-text transition-[background-position] duration-400 ease-in-out hover:bg-right;
     background-image: linear-gradient(-90deg, #5cc2ed 0, #5d62ee 25%, #c298d3 50%, currentColor 51%, currentColor 100%);
     background-size: 200% 100%;

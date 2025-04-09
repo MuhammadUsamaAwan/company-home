@@ -9,19 +9,19 @@ export function SiteHeader() {
           Company
         </Link>
         <nav className='space-x-[44px] text-[13px] font-semibold tracking-[0.2em] uppercase'>
-          <Link className='bg-gradient' href='/'>
+          <Link className='gradient-hover' href='/'>
             Home
           </Link>
-          <Link className='bg-gradient' href='/'>
+          <Link className='gradient-hover' href='/'>
             Pages
           </Link>
-          <Link className='bg-gradient' href='/'>
+          <Link className='gradient-hover' href='/'>
             Portfolio
           </Link>
-          <Link className='bg-gradient' href='/'>
+          <Link className='gradient-hover' href='/'>
             Shop
           </Link>
-          <Link className='bg-gradient' href='/'>
+          <Link className='gradient-hover' href='/'>
             Blog
           </Link>
         </nav>
