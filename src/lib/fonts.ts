@@ -1,13 +1,13 @@
-import { Archivo, Heebo } from 'next/font/google';
+import { Archivo, Syne } from 'next/font/google';
 
 export const fontSans = Archivo({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-archivo-2',
+  variable: '--font-archivo',
 });
 
-export const fontHeading = Heebo({
+export const fontHeading = Syne({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-heebo-2',
+  variable: '--font-syne',
 });
