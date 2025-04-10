@@ -4,8 +4,11 @@ import Image from 'next/image';
 
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
+import { motion } from 'motion/react';
 
 import { Button } from '~/components/ui/button';
+
+const MotionButton = motion.create(Button);
 
 export default function HomePage() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 9000 })]);
@@ -20,12 +23,35 @@ export default function HomePage() {
             className='subtle-zoom absolute inset-0 -z-10 object-cover object-center'
             fill
           />
-          <div className='max-w-2xl pl-[10%] sm:pl-40'>
-            <h1 className='font-heading mb-7.5 text-6xl font-bold text-white sm:text-7xl'>
+          <motion.div className='max-w-2xl pl-[10%] sm:pl-40'>
+            <motion.h1
+              initial={{
+                translateY: 30,
+                opacity: 0,
+              }}
+              whileInView={{
+                translateY: 0,
+                opacity: 1,
+                transition: { delay: 0.3 },
+              }}
+              className='font-heading mb-7.5 text-6xl font-bold text-white sm:text-7xl'
+            >
               Digital Agency for Creators
-            </h1>
-            <Button>View More</Button>
-          </div>
+            </motion.h1>
+            <MotionButton
+              initial={{
+                translateY: 30,
+                opacity: 0,
+              }}
+              whileInView={{
+                translateY: 0,
+                opacity: 1,
+                transition: { delay: 0.5 },
+              }}
+            >
+              View More
+            </MotionButton>
+          </motion.div>
         </div>
         <div className='relative flex h-dvh min-w-0 flex-none basis-full items-center overflow-hidden'>
           <Image
@@ -35,8 +61,33 @@ export default function HomePage() {
             fill
           />
           <div className='max-w-2xl pl-[10%] sm:pl-40'>
-            <h1 className='font-heading mb-7.5 text-6xl font-bold text-white sm:text-7xl'>Proper Database Security</h1>
-            <Button>View More</Button>
+            <motion.h1
+              initial={{
+                translateY: 30,
+                opacity: 0,
+              }}
+              whileInView={{
+                translateY: 0,
+                opacity: 1,
+                transition: { delay: 0.3 },
+              }}
+              className='font-heading mb-7.5 text-6xl font-bold text-white sm:text-7xl'
+            >
+              Proper Database Security
+            </motion.h1>
+            <MotionButton
+              initial={{
+                translateY: 30,
+                opacity: 0,
+              }}
+              whileInView={{
+                translateY: 0,
+                opacity: 1,
+                transition: { delay: 0.5 },
+              }}
+            >
+              View More
+            </MotionButton>
           </div>
         </div>
       </div>
