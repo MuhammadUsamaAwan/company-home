@@ -1,20 +1,12 @@
 'use client';
 
-import { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
 
-import { cn } from '~/lib/cn';
-
 export function Portfolio() {
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: false }, [Autoplay({ delay: 4000 })]);
-  const [isEmblaRendered, setIsEmblaRendered] = useState(false);
-
-  useEffect(() => {
-    setIsEmblaRendered(true);
-  }, []);
+  const [emblaRef] = useEmblaCarousel({ loop: false, inViewThreshold: 1 }, [Autoplay({ delay: 4000 })]);
 
   return (
     <div className='py-[173px] pl-[calc((100%-86%)/2)] md:pl-[calc((100%-768px)/2)] lg:pl-[calc((100%-1100px)/2)] xl:pl-[calc((100%-1300px)/2)]'>

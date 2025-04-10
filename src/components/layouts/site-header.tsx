@@ -30,14 +30,8 @@ export function SiteHeader() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [lastScrollY]);
 
-  return (
-    <header
-      className={cn(
-        'fixed top-0 z-10 flex w-full items-center justify-between px-[7%] md:px-[40px] lg:px-[73px]',
-        isTop && 'h-[70px] bg-white lg:h-[150px] lg:bg-transparent',
-        showNav ? 'h-[70px] translate-y-0 bg-white' : 'h-[70px] -translate-y-full'
-      )}
-    >
+  const content = (
+    <>
       <Link href='/' className={cn('text-[14px] font-semibold tracking-[0.2em] uppercase', isTop && 'lg:text-white')}>
         Company
       </Link>
@@ -114,6 +108,27 @@ export function SiteHeader() {
           </Link>
         </div>
       </nav>
-    </header>
+    </>
+  );
+
+  return (
+    <>
+      <header
+        className={cn(
+          'absolute top-0 z-10 flex h-[70px] w-full items-center justify-between bg-white px-[7%] md:px-[40px] lg:h-[150px] lg:bg-transparent lg:px-[73px]'
+        )}
+      >
+        {content}
+      </header>
+      <header
+        className={cn(
+          'fixed top-0 z-10 flex w-full items-center justify-between px-[7%] duration-400 md:px-[40px] lg:px-[73px]',
+          isTop && 'hidden',
+          showNav ? 'h-[70px] translate-y-0 bg-white shadow-sm' : 'h-[70px] -translate-y-full'
+        )}
+      >
+        {content}
+      </header>
+    </>
   );
 }
