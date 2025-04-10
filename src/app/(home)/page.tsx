@@ -13,8 +13,13 @@ export default function HomePage() {
   return (
     <div className='overflow-hidden' ref={emblaRef}>
       <div className='flex'>
-        <div className='relative flex h-dvh min-w-0 flex-none basis-full items-center'>
-          <Image src='/home1.jpg' alt='home' className='absolute inset-0 -z-10 object-cover object-center' fill />
+        <div className='relative flex h-dvh min-w-0 flex-none basis-full items-center overflow-hidden'>
+          <Image
+            src='/home1.jpg'
+            alt='home'
+            className='subtle-zoom absolute inset-0 -z-10 object-cover object-center'
+            fill
+          />
           <div className='max-w-2xl pl-[10%] sm:pl-40'>
             <h1 className='font-heading mb-7.5 text-6xl font-bold text-white sm:text-7xl'>
               Digital Agency for Creators
@@ -22,8 +27,13 @@ export default function HomePage() {
             <Button>View More</Button>
           </div>
         </div>
-        <div className='relative flex h-dvh min-w-0 flex-none basis-full items-center'>
-          <Image src='/home2.jpg' alt='home' className='absolute inset-0 -z-10 object-cover object-center' fill />
+        <div className='relative flex h-dvh min-w-0 flex-none basis-full items-center overflow-hidden'>
+          <Image
+            src='/home2.jpg'
+            alt='home'
+            className='subtle-zoom absolute inset-0 -z-10 object-cover object-center'
+            fill
+          />
           <div className='max-w-2xl pl-[10%] sm:pl-40'>
             <h1 className='font-heading mb-7.5 text-6xl font-bold text-white sm:text-7xl'>Proper Database Security</h1>
             <Button>View More</Button>
