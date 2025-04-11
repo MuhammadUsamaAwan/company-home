@@ -32,10 +32,13 @@ export function SiteHeader() {
 
   const content = (
     <>
-      <Link href='/' className={cn('text-[14px] font-semibold tracking-[0.2em] uppercase', isTop && 'lg:text-white')}>
+      <Link
+        href='/'
+        className={cn('font-sans text-[14px] font-semibold tracking-[0.2em] uppercase', isTop && 'lg:text-white')}
+      >
         Company
       </Link>
-      <nav className='hidden items-center space-x-[44px] lg:flex'>
+      <nav className='hidden items-center space-x-[44px] font-sans lg:flex'>
         <Link
           className={cn(
             'gradient-hover block py-[68px] text-[13px] font-semibold tracking-[0.2em] uppercase',
@@ -85,7 +88,7 @@ export function SiteHeader() {
       <Burger open={open} setOpen={setOpen} />
       <nav
         ref={ref}
-        className={'absolute top-[70px] left-0 w-full overflow-hidden bg-white duration-400 lg:hidden'}
+        className='absolute top-[70px] left-0 w-full overflow-hidden bg-white font-sans shadow-sm duration-400 lg:hidden'
         style={{
           maxHeight: open ? ref.current?.scrollHeight : 0,
         }}
@@ -115,7 +118,7 @@ export function SiteHeader() {
     <>
       <header
         className={cn(
-          'absolute top-0 z-10 flex h-[70px] w-full items-center justify-between bg-white px-[7%] md:px-[40px] lg:h-[150px] lg:bg-transparent lg:px-[73px]'
+          'absolute top-0 z-10 hidden h-[70px] w-full items-center justify-between bg-white px-[7%] md:px-[40px] lg:flex lg:h-[150px] lg:bg-transparent lg:px-[73px]'
         )}
       >
         {content}
@@ -123,7 +126,7 @@ export function SiteHeader() {
       <header
         className={cn(
           'fixed top-0 z-10 flex w-full items-center justify-between px-[7%] duration-400 md:px-[40px] lg:px-[73px]',
-          isTop && 'hidden',
+          isTop && 'lg:hidden',
           showNav ? 'h-[70px] translate-y-0 bg-white shadow-sm' : 'h-[70px] -translate-y-full'
         )}
       >

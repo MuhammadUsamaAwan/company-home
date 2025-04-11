@@ -15,7 +15,7 @@ export function Clients() {
           View More
         </button>
       </div>
-      <div className='grid grid-cols-3 gap-7.5'>
+      <div className='grid grid-cols-2 gap-7.5 sm:grid-cols-3'>
         <div className='group relative mx-auto'>
           <Image src='/client1.png' alt='client' width={163} height={162} />
           <div className='font-heading absolute bottom-full left-1/2 w-max -translate-x-1/2 translate-y-7.5 bg-[#f9f9f9] px-6 py-2.5 text-center text-[13px] font-medium tracking-[0.3em] text-[#8A8A8A] uppercase opacity-0 duration-400 group-hover:translate-y-0 group-hover:opacity-100'>

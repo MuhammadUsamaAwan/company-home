@@ -18,7 +18,7 @@ export function Expertise() {
         <h2 className='font-heading mt-[9px] mb-[37px] max-w-xs text-[40px] leading-[1.1em] font-semibold'>
           Achieve Success With Our Team
         </h2>
-        <div className='relative flex gap-10 after:absolute after:top-[calc(100%-1px)] after:left-0 after:h-px after:w-full after:bg-[#5cc2ed] lg:justify-between'>
+        <div className='relative flex gap-7.5 after:absolute after:top-[calc(100%-1px)] after:left-0 after:h-px after:w-full after:bg-[#5cc2ed] lg:justify-between'>
           <button
             className={cn(
               'font-heading relative cursor-pointer border-b border-transparent pb-2 text-2xl leading-[1.1em] font-semibold after:absolute after:top-full after:left-0 after:z-10 after:h-px after:w-0 after:bg-black after:transition-all after:duration-400',
