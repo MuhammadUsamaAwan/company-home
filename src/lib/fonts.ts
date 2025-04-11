@@ -1,4 +1,4 @@
-import { Archivo, Syne } from 'next/font/google';
+import { Archivo, Heebo, Syne } from 'next/font/google';
 
 export const fontSans = Archivo({
   subsets: ['latin'],
@@ -10,4 +10,10 @@ export const fontHeading = Syne({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-syne',
+});
+
+export const fontText = Heebo({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-heebo',
 });

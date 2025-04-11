@@ -6,9 +6,7 @@ import Autoplay from 'embla-carousel-autoplay';
 import useEmblaCarousel from 'embla-carousel-react';
 import { motion } from 'motion/react';
 
-import { Button } from '~/components/ui/button';
-
-const MotionButton = motion.create(Button);
+import { MotionButton } from '~/components/ui/motion-button';
 
 export function Hero() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [Autoplay({ delay: 9000 })]);
@@ -23,7 +21,7 @@ export function Hero() {
             className='subtle-zoom absolute inset-0 -z-10 object-cover object-center'
             fill
           />
-          <motion.div className='max-w-2xl pl-[10%] sm:pl-40'>
+          <div className='max-w-2xl pl-[10%] sm:pl-40'>
             <motion.h1
               initial={{
                 translateY: 30,
@@ -51,7 +49,7 @@ export function Hero() {
             >
               View More
             </MotionButton>
-          </motion.div>
+          </div>
         </div>
         <div className='relative flex h-dvh min-w-0 flex-none basis-full items-center overflow-hidden'>
           <Image
@@ -93,14 +91,14 @@ export function Hero() {
       </div>
       <div className='absolute right-22 bottom-10 flex items-center gap-4'>
         <button
-          className='gradient-hover cursor-pointer text-xs tracking-[0.2em] text-white uppercase'
+          className='gradient-hover cursor-pointer font-sans text-xs font-medium tracking-[0.2em] text-white uppercase'
           onClick={() => emblaApi?.scrollPrev()}
         >
           Prev
         </button>
         <div className='h-px w-32 bg-white'></div>
         <button
-          className='gradient-hover cursor-pointer text-xs tracking-[0.2em] text-white uppercase'
+          className='gradient-hover cursor-pointer font-sans text-xs font-medium tracking-[0.2em] text-white uppercase'
           onClick={() => emblaApi?.scrollNext()}
         >
           Next
