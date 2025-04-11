@@ -74,35 +74,30 @@
   }
 }
 
-.padding-x {
-  padding-left: calc((100% - 1100px) / 2);
+.padding-right {
   padding-right: calc((100% - 1100px) / 2);
 }
 
 @media only screen and (min-width: 1441px) {
-  .padding-x {
-    padding-left: calc((100% - 1300px) / 2);
+  .padding-right {
     padding-right: calc((100% - 1300px) / 2);
   }
 }
 
 @media only screen and (max-width: 1200px) {
-  .padding-x {
-    padding-left: calc((100% - 960px) / 2);
+  .padding-right {
     padding-right: calc((100% - 960px) / 2);
   }
 }
 
 @media only screen and (max-width: 1024px) {
-  .padding-x {
-    padding-left: calc((100% - 768px) / 2);
+  .padding-right {
     padding-right: calc((100% - 768px) / 2);
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .padding-x {
-    padding-left: calc((100% - 86%) / 2);
+  .padding-right {
     padding-right: calc((100% - 86%) / 2);
   }
 }

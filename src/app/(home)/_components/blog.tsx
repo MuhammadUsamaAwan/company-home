@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export function Blog() {
   return (
-    <div className='padding-x flex flex-col gap-[30px] py-[165px] xl:flex-row'>
+    <div className='padding-left padding-right flex flex-col gap-[30px] py-[165px] xl:flex-row'>
       <div className='group'>
         <div className='relative h-[415px] w-full xl:w-[535px]'>
           <Image src='/blog1.jpg' alt='blog' className='object-cover object-center' fill />
