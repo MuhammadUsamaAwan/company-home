@@ -38,3 +38,25 @@
 .subtle-zoom {
   animation: subtleZoom 9s ease-in-out infinite alternate;
 }
+
+.portfolio-padding {
+  padding-left: calc((100% - 1100px) / 2);
+}
+
+@media only screen and (min-width: 1441px) {
+  .portfolio-padding {
+    padding-left: calc((100% - 1300px) / 2);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .portfolio-padding {
+    padding-left: calc((100% - 86%) / 2);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .portfolio-padding {
+    padding-left: calc((100% - 768px) / 2);
+  }
+}

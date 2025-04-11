@@ -9,7 +9,7 @@ export function Portfolio() {
   const [emblaRef] = useEmblaCarousel({ loop: false, inViewThreshold: 1 }, [Autoplay({ delay: 4000 })]);
 
   return (
-    <div className='py-[173px] pl-[calc((100%-86%)/2)] md:pl-[calc((100%-768px)/2)] lg:pl-[calc((100%-1100px)/2)] xl:pl-[calc((100%-1300px)/2)]'>
+    <div className='portfolio-padding py-[173px]'>
       <div className='font-heading text-[13px] font-medium tracking-[4px] text-[#8A8A8A] uppercase'>Porfolio</div>
       <h2 className='font-heading mt-[9px] max-w-md text-[50px] leading-[1.1em] font-semibold'>
         Inovation and Digital Branding
