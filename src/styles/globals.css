@@ -25,11 +25,8 @@
     background-size: 200% 100%;
     -webkit-text-fill-color: transparent;
   }
-  .bg-gradient {
-    @apply bg-clip-text bg-right transition-[background-position] duration-400 ease-in-out;
-    background-image: linear-gradient(-90deg, #5cc2ed 0, #5d62ee 25%, #c298d3 50%, currentColor 51%, currentColor 100%);
-    background-size: 200% 100%;
-    -webkit-text-fill-color: transparent;
+  .hover-bg-gradient:hover {
+    background: linear-gradient(45deg, #5cc3ee 0, #5d91ef 29%, #5e5ef0 50%, #947be1 73%, #ca97d2 100%);
   }
 }
 
@@ -100,4 +97,10 @@
   .padding-right {
     padding-right: calc((100% - 86%) / 2);
   }
+}
+
+.gradient-border {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(70deg, #57b8e0, #5762e2, #be8ec6);
 }

@@ -9,7 +9,7 @@ export function Expertise() {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <div className='padding-right flex flex-col gap-11.5 pb-40 lg:flex-row'>
+    <div className='padding-right flex flex-col gap-11.5 lg:flex-row'>
       <div className='relative min-h-[473px] flex-[64%]'>
         <Image src='/expertise.jpg' alt='expertise' className='object-cover object-center' fill />
       </div>

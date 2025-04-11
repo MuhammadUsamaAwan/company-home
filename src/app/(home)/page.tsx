@@ -1,4 +1,5 @@
 import { Blog } from './_components/blog';
+import { Clients } from './_components/clients';
 import { Cta } from './_components/cta';
 import { Expertise } from './_components/expertise';
 import { Hero } from './_components/hero';
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Cta />
       <Blog />
       <Expertise />
+      <Clients />
     </>
   );
 }
