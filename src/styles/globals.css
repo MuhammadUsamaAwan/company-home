@@ -28,6 +28,11 @@
   .hover-bg-gradient:hover {
     background: linear-gradient(45deg, #5cc3ee 0, #5d91ef 29%, #5e5ef0 50%, #947be1 73%, #ca97d2 100%);
   }
+  .number-gradient {
+    @apply bg-clip-text;
+    background-image: linear-gradient(-90deg, #5cc2ed 0, #5d62ee 50%, #c298d3 100%);
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 @keyframes subtleZoom {
@@ -103,4 +108,15 @@
   border: 1px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(70deg, #57b8e0, #5762e2, #be8ec6);
+}
+
+.gradient-2 {
+  background: linear-gradient(
+    60deg,
+    rgba(202, 151, 210, 0.25) 0,
+    rgba(148, 123, 225, 0.25) 17%,
+    rgba(94, 94, 240, 0.25) 45%,
+    rgba(93, 145, 239, 0.25) 83%,
+    rgba(92, 195, 238, 0.25) 100%
+  );
 }

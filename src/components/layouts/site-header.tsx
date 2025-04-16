@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 import { cn } from '~/lib/cn';
 
@@ -13,6 +14,7 @@ export function SiteHeader() {
   const [isTop, setIsTop] = useState(true);
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const isHome = usePathname() === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,7 +36,10 @@ export function SiteHeader() {
     <>
       <Link
         href='/'
-        className={cn('font-sans text-[14px] font-semibold tracking-[0.2em] uppercase', isTop && 'lg:text-white')}
+        className={cn(
+          'font-sans text-[14px] font-semibold tracking-[0.2em] uppercase',
+          isTop && isHome && 'lg:text-white'
+        )}
       >
         Company
       </Link>
@@ -42,7 +47,7 @@ export function SiteHeader() {
         <Link
           className={cn(
             'gradient-hover block py-[68px] text-[13px] font-semibold tracking-[0.2em] uppercase',
-            isTop && 'text-white'
+            isTop && isHome && 'text-white'
           )}
           href='/'
         >
@@ -51,7 +56,7 @@ export function SiteHeader() {
         <Link
           className={cn(
             'gradient-hover block py-[68px] text-[13px] font-semibold tracking-[0.2em] uppercase',
-            isTop && 'text-white'
+            isTop && isHome && 'text-white'
           )}
           href='/'
         >
@@ -60,7 +65,7 @@ export function SiteHeader() {
         <Link
           className={cn(
             'gradient-hover block py-[68px] text-[13px] font-semibold tracking-[0.2em] uppercase',
-            isTop && 'text-white'
+            isTop && isHome && 'text-white'
           )}
           href='/'
         >
@@ -69,7 +74,7 @@ export function SiteHeader() {
         <Link
           className={cn(
             'gradient-hover block py-[68px] text-[13px] font-semibold tracking-[0.2em] uppercase',
-            isTop && 'text-white'
+            isTop && isHome && 'text-white'
           )}
           href='/'
         >
@@ -78,7 +83,7 @@ export function SiteHeader() {
         <Link
           className={cn(
             'gradient-hover block py-[68px] text-[13px] font-semibold tracking-[0.2em] uppercase',
-            isTop && 'text-white'
+            isTop && isHome && 'text-white'
           )}
           href='/'
         >
