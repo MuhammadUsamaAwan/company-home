@@ -24,7 +24,7 @@ export function Portfolio() {
                 className='scale-105 object-cover duration-400 group-hover:scale-100'
                 fill
               />
-              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-50'></div>
+              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-70'></div>
             </div>
             <div className='font-heading mt-3 text-[30px] leading-[1.1em] font-semibold'>Digital Strategy</div>
           </div>
@@ -36,7 +36,7 @@ export function Portfolio() {
                 className='scale-105 object-cover duration-400 group-hover:scale-100'
                 fill
               />
-              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-50'></div>
+              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-70'></div>
             </div>
             <div className='font-heading mt-3 text-[30px] leading-[1.1em] font-semibold'>Digital Strategy</div>
           </div>
@@ -48,7 +48,7 @@ export function Portfolio() {
                 className='scale-105 object-cover duration-400 group-hover:scale-100'
                 fill
               />
-              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-50'></div>
+              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-70'></div>
             </div>
             <div className='font-heading mt-3 text-[30px] leading-[1.1em] font-semibold'>Digital Strategy</div>
           </div>
@@ -60,7 +60,7 @@ export function Portfolio() {
                 className='scale-105 object-cover duration-400 group-hover:scale-100'
                 fill
               />
-              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-50'></div>
+              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-70'></div>
             </div>
             <div className='font-heading mt-3 text-[30px] leading-[1.1em] font-semibold'>Digital Strategy</div>
           </div>
@@ -72,7 +72,7 @@ export function Portfolio() {
                 className='scale-105 object-cover duration-400 group-hover:scale-100'
                 fill
               />
-              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-50'></div>
+              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-70'></div>
             </div>
             <div className='font-heading mt-3 text-[30px] leading-[1.1em] font-semibold'>Digital Strategy</div>
           </div>
@@ -84,7 +84,7 @@ export function Portfolio() {
                 className='scale-105 object-cover duration-400 group-hover:scale-100'
                 fill
               />
-              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-50'></div>
+              <div className='absolute inset-0 bg-white opacity-0 transition-opacity duration-400 group-hover:opacity-70'></div>
             </div>
             <div className='font-heading mt-3 text-[30px] leading-[1.1em] font-semibold'>Digital Strategy</div>
           </div>
