@@ -11,7 +11,7 @@ export function Clients() {
         <p className='mt-3.5 mb-7.5'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ipsum possimus.
         </p>
-        <button className='gradient-border hover-bg-gradient block cursor-pointer px-[50px] py-[24px] font-sans text-xs leading-[0.2em] font-medium uppercase hover:text-white'>
+        <button className='gradient-border hover-bg-gradient block cursor-pointer px-[50px] py-[24px] font-sans text-xs font-medium tracking-[0.2em] uppercase hover:text-white'>
           View More
         </button>
       </div>
